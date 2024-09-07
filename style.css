@@ -1,0 +1,79 @@
+.container {
+    background-color: #F9F0ED;
+    width: 100%;
+}
+/* tạo viền */
+.information {
+    border-right:  1px solid black;
+}
+/* đánh màu cho khung tt sản phẩm */
+.content-info {
+    background-color: #FFDBDB;
+}
+/* tạo khung descrip */
+.descrip {
+    width: 100%;
+    height: 100px;
+    top: 33px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+}
+/* canh nút find*/
+.btn-icon-find {
+    background-color: #FBBCBC;
+    width: 15%;
+}
+/* khung tìm kiếm */
+.find-btn {
+    width: 80%;
+}
+/* tạo card*/
+.card-item{
+    width: 121px;
+    height: auto;
+    top: 17px;
+    left: 15px;
+    border: 1px solid #8A8080;
+}
+/* fix cứng ảnh */
+.card img {
+    width: 100%;
+    display: block;
+}
+/* chỉnh card-body*/
+.card-body {
+    width: 100%;
+    height: calc(100% - 90px);
+    top: 90px;
+    left: 1px;
+    gap: 0px;
+    opacity: 0px;
+    background-color:  #FBBCBC;
+}
+/* fix cứng kích thước ảnh*/
+.card-img-top {
+    width: 100%;
+    height: 90px;
+}
+
+.btn-card__controller {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-control {
+    width: 70px;
+    font-size: small;
+}
+
+
+.name-product {
+    width: 100%; /* Đặt chiều rộng cho phần tử */
+    white-space: nowrap; /* Đảm bảo văn bản không xuống dòng */
+    overflow: hidden; /* Ẩn phần văn bản vượt quá chiều rộng */
+    text-overflow: ellipsis; /*Thêm dấu "..." khi văn bản bị cắt */
+    
+}
+

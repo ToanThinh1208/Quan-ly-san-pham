@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quản lý sản phẩm</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+            crossorigin="anonymous"
+        >
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!-- code here -->
+         <div class="container">
+            <div class="row ">
+                <div class="information col-3">
+                    <div class="content-info p-2 vh-100">
+                        <h6>Thông tin sản phẩm</h6>
+                        <form>
+                            <div class="mb-3 ">
+                                <label for="name" class="form-label">Tên sản phẩm</label>
+                                <input id="name" type="text" class="form-control border border-black rounded-0 ipt-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="price" class="form-label">Giá sản phẩm</label>
+                                <input id="price" type="text" class="form-control border border-black rounded-0 ipt-price">
+                            </div>
+                            <div class="mb-3">
+                                <label for="amount" class="form-label">Số lượng</label>
+                                <input id="amount" type="text" class="form-control border border-black rounded-0 ipt-price">
+                            </div>
+                            <div class="mb-3">
+                                <label for="link-img" class="form-label">Ảnh sản phẩm</label>
+                                <input id="link-img" type="text" class="form-control border border-black rounded-0 ipt-link">
+                            </div>
+                            <div class="mb-3">
+                                <label for="description" class="form-label m-1">Mô tả</label>
+                                <input id="description" type="text" class="form-control descrip border border-black rounded-0 ipt-desc">
+                            </div>
+                            <div class="controller text-center d-flex flex-row justify-content-center flex-wrap mt-4">
+                                    <button id="btn-add" type="submit" class="btn btn-primary btn-control btn-add p-1 me-2">Add</button>
+                                    <button id="btn-delete"  type="button" class="btn btn-danger btn-control btn-delete p-1 me-2 ">Delete</button>
+                                    <button id="btn-clear" type="button" class="btn btn-secondary btn-control btn-clear p-1 me-2">Clear</button>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="product col-7 text-center m-3  ">
+                    <div class="m-3 d-flex flex-row justify-content-between">
+                        <input id="find" type="text" placeholder="Tìm kiếm sản phẩm..." class="d-block find-btn rounded-1">
+                        <button id="find" class="btn-icon-find d-block rounded-1">
+                            <i class="fas fa-search" style="color: white"></i>
+                        </button>
+                    </div>
+                    <div class="card-group ">
+                        <!-- <div class="card-item m-3 d-flex flex-row flex-wrap p-0 actived">
+                                <img src="https://product.hstatic.net/200000623085/product/292819757_373181348216688_5297257767263559909_n-hd_b00328ba6c1d4ea8b331e6bb63d98f03.jpg " class="card-img-top" alt="ảnh sản phẩm">
+                                <div class="card-body" data-id="cardItem">
+                                    <span class="d-inline">Tên sản phẩm</span>
+                                    <div class="card-text d-flex flex-row justify-content-between pb-0">
+                                        <span >10.000</span>
+                                        <span style="text-decoration: line-through;">20.000</span>
+                                    </div>
+                                </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="pagination d-flex flex-row justify-content-center">
+                <nav aria-label="Page navigation example" class="pagination_child">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                  </nav>
+            </div> -->
+         </div>
+        <!-- js-->
+         <script src="./style.js"></script>
+    </body>
+</html>
+
